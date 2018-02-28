@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My profile</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>My profile</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <div class="text-align icons" id="sidebar">
+    <ul>
+      <li>
+        <a href="#summary">
+          <i class="fa fa-info-circle icons"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#favorite-movies">
+          <i class="fa fa-file-video icons"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          <i class="fa fa-life-ring icons"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-  <body>
+  <div id="page-content">
     <div class="container">
-      <div class="text-align card-white">
+      <div class="text-align card-white" id="summary">
         <img src="images/profile.png" alt="Maxime Roberti" width="200px" class="img-circle">
         <h1> Maxime Roberti </h1>
 
@@ -19,29 +39,28 @@
 
         <p> I am a young optimistic person having studied Business Engineer and Entrepreneurship at University. I like playing sports and practice tennis and soccer in competition and stopped field hockey this year after several years of practice. I am looking for a job opportunity in the <em> <strong> payment services industry, in the investment and/or financial analysis industry </em> </strong>.</p>
 
-       <a href="https://lewagon.com" class="btn-red">Le Wagon </a>
+        <a href="https://lewagon.com" class="btn-red">Le Wagon </a>
       </div>
 
       <div class="card-white text-align">
-        <h3> Social networks </h3>
         <ul class="list-inline">
           <li>
-            <i class="fab fa-facebook-f icons"> </i>
-            <a href="https://www.facebook.com/maxrobe" target="blank"> Facebook </a>
+
+            <a href="https://www.facebook.com/maxrobe" target="blank"> <i class="fab fa-facebook-f icons"> </i> Facebook </a>
           </li>
           <li>
-            <i class="fab fa-twitter icons"></i>
-            <a href="https://twitter.com/_MaxRob" target="blank"> Twitter </a>
+
+            <a href="https://twitter.com/_MaxRob" target="blank"> <i class="fab fa-twitter icons"></i> Twitter </a>
           </li>
           <li>
-            <i class="fab fa-linkedin-in icons"></i>
-            <a href="https://www.linkedin.com/in/maxime-roberti-553756106/" target="blank"> LinkedIn </a>
+
+            <a href="https://www.linkedin.com/in/maxime-roberti-553756106/" target="blank"> <i class="fab fa-linkedin-in icons"></i> LinkedIn </a>
           </li>
         </ul>
       </div>
 
-      <div class="card-white text-align">
-        <h2> My favorite movies </h2>
+      <div class="card-white text-align" id="favorite-movies">
+        <h2> My Favorite Movies </h2>
         <table>
           <tbody>
             <tr>
@@ -49,7 +68,7 @@
                 <img src="images/gran_torino.jpg" alt="Gran Torino" width="200px">
               </td>
               <td>
-                <h3>Gran Torino</h3>
+                <h3>#1 : Gran Torino</h3>
                 <p>Gran Torino is a 2008 American drama film directed and produced by Clint Eastwood, who also starred in the film. The film co-stars Christopher Carley, Bee Vang and Ahney Her. This was Eastwood's first starring role since 2004's Million Dollar Baby. The film features a large Hmong American cast, as well as one of Eastwood's younger sons, Scott. Eastwood's oldest son, Kyle, provided the score. Gran Torino opened via a limited theatrical release in North America on December 12, 2008, and later to a worldwide release on January 9, 2009. Set in Detroit, Michigan, it is the first mainstream American film to feature Hmong Americans. Many Lao Hmong war refugees resettled in the U.S. following the communist takeover of Laos in 1975.</p>
               </td>
             </tr>
@@ -58,18 +77,14 @@
                 <img src="images/shawshank.jpeg" alt="Shawshank" width="200px">
               </td>
               <td>
-                <h3> The Shawshank Redemption</h3>
+                <h3> #2 : The Shawshank Redemption</h3>
                 <p>The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. It tells the story of banker Andy Dufresne (Tim Robbins), who is sentenced to life in Shawshank State Penitentiary for the murder of his wife and her lover, despite his claims of innocence. Over the following two decades, he befriends a fellow prisoner, contraband smuggler Ellis "Red" Redding (Morgan Freeman), and becomes instrumental in a money laundering operation led by the prison warden Samuel Norton (Bob Gunton). William Sadler, Clancy Brown, Gil Bellows, and James Whitmore appear in supporting roles.</p>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-
       <div class="card-white text-align">
-        <h2> About this page </h2>
-        <img src="images/wagon.jpg" alt="Le Wagon" width="100px">
-        <p>  This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
         <ul class="list-inline">
          <li>
            <a href="#">
@@ -86,9 +101,15 @@
              <i class="fa fa-star icons"></i>
            </a>
          </li>
-        </ul>
-      </div>
+       </ul>
+     </div>
+
+     <div class="text-align" id="footer">
+      <h2> About this page </h2>
+      <p>  This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
     </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>
 

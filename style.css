@@ -29,6 +29,7 @@ p {
 a {
   color: #B4B4B4;
   text-decoration: none;
+  font-size: 18px;
 }
 
 a:hover {
@@ -38,10 +39,12 @@ a:hover {
 
 
 
+
 /* Custom design */
 .container {
-  width: 700px;
+  width: auto;
   margin: 0 auto;
+  margin-left: 130px;
 }
 
 .text-align {
@@ -71,6 +74,7 @@ a:hover {
 
 .icons {
   font-size: 30px;
+  padding-top: 80px;
 }
 
 .icons:hover {
@@ -88,6 +92,20 @@ a:hover {
 
 .btn-red:hover {
   color: #DB5658;
+}
+
+#sidebar {
+  position: fixed;
+  width: 120px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #384047;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
 }
 
 @media (max-width: 960px) {
